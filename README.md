@@ -1,4 +1,6 @@
 
+My Thread: https://void.to/Thread-Official-Release-Howling-Loader-V3-NEW
+
 Tutorial Insert Cheat:
 
 1. go to Resources.resx (double tap)
