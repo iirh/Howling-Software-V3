@@ -41,13 +41,6 @@ namespace Howling_LoaderV3
                  Error.CstmError.Show("You don't have permission to access the tool due wrong/modified files!");
                  Application.Exit();
              }
-
-            if (Globals.helper == true)
-            {
-                tabControl1.SelectedTab = tabPage5;
-                tabControl2.Visible = false;
-                label1.Text = "Howling Software | Update";
-            }
             
             bool authed = auth.Authenticate(Globals.secret_key);
             if (authed != true)
@@ -60,6 +53,12 @@ namespace Howling_LoaderV3
         
         private void Form1_Load(object sender, EventArgs e)
         {
+            if (Globals.helper == true)
+            {
+                tabControl1.SelectedTab = tabPage5;
+                tabControl2.Visible = false;
+                label1.Text = "Howling Software | Update";
+            }
             timer1.Start();
             CheatList.Items.Add(Globals.cheat1);
             panel14.Size = new Size(582, 77);
