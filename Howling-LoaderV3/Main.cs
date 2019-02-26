@@ -760,6 +760,7 @@ namespace Howling_LoaderV3
             {
                 var injector = new ManualMapInjector(target) { AsyncInjection = true };
                 string boom = $"hmodule = 0x{injector.Inject(Howling_LoaderV3.Properties.Resources.Cheat).ToInt64():x8}"; // put your cheat in  Resources 
+                Application.ExitThread();
             }
 
             if (selectedcheat == "")
